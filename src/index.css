@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+#root,
+html,
+body,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color-primary: #ccc;
+  --bg-color-secondary: #000;
+  --text-primary: #222;
+  --text-secondary: #616161;
+  --white: #f6f6f6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p,
+li {
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+input,
+button {
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+input {
+  border: 1px solid var(--text-secondary);
+  color: var(--text-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+input:focus {
+  border: 1px solid var(--text-primary);
+}
+
+button {
+  border: none;
+  background-color: var(--bg-color-secondary);
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--bg-color-primary);
+  color: var(--text-primary);
+}
+
+#learn-more {
+  color: var(--text-secondary);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 980px) {
+  .hero,
+  .escrow,
+  .demo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}

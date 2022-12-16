@@ -1,0 +1,19 @@
+.escrow {
+  background-color: var(--bg-color-primary);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 0px 20px;
+}
+
+.escrow img {
+  width: 100%;
+}
+
+.escrow-top {
+  margin-top: 20px;
+}
+
+.escrow-bottom {
+  text-align: center;
+}

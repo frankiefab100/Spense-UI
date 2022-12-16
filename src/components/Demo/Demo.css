@@ -1,0 +1,13 @@
+.demo {
+  padding: 10px 20px;
+}
+
+.demo-bottom {
+  text-align: center;
+  width: 100%;
+}
+
+.demo-bottom img {
+  margin-top: 20px;
+  width: 100%;
+}

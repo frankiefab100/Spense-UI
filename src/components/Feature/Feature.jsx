@@ -1,26 +1,91 @@
-import React from "react";
-import Facebook from "/icons/Facebook Logo.png";
-import Dribbble from "/icons/Dribbble Logo.png";
-import Youtube from "/icons/Youtube Logo.png";
-import Pinterest from "/icons/Pinterest Logo.png";
-import Twitter from "/icons/Twitter Logo.png";
-import Reddit from "/icons/Reddit Logo.png";
-import Google from "/icons/Google Logo.png";
-import Slack from "/icons/Slack Logo.png";
-import "./Feature.css";
+import { useState } from "react";
+import { BarChart2, GitPullRequest, CircleDot, GitBranch } from "lucide-react";
+import styles from "./Feature.module.css";
+
+const tabs = [
+  {
+    id: "contributors",
+    title: "Contributors Metrics",
+    description:
+      "Detailed insights into distribution of contributions as well as key contributors.",
+    icon: BarChart2,
+    image: "/images/View-Contributors.png",
+  },
+  {
+    id: "pull-requests",
+    title: "Pull Request Analytics",
+    description: "Monitor the status of pull requests.",
+    icon: GitPullRequest,
+    image: "/images/View-Pullrequests.png",
+  },
+  {
+    id: "issues",
+    title: "Issue Tracking",
+    description: "Track open and closed issues over time.",
+    icon: CircleDot,
+    image: "/images/View-Issues.png",
+  },
+  {
+    id: "branches",
+    title: "Branch Visualization",
+    description:
+      "Understand the relationships and hierarchy of branches of a repository.",
+    icon: GitBranch,
+    image: "/images/View-Branches.png",
+  },
+];
 
 const Feature = () => {
+  const [activeTab, setActiveTab] = useState(tabs[0].id);
+
+  const activeImage = tabs.find((tab) => tab.id === activeTab)?.image;
+
   return (
-    <div className="feature">
-      <img src={Facebook} alt="Facebook logo" />
-      <img src={Dribbble} alt="Dribbble logo" />
-      <img src={Youtube} alt="Youtube logo" />
-      <img src={Pinterest} alt="Pinterest logo" />
-      <img src={Twitter} alt="Twitter logo" />
-      <img src={Reddit} alt="Reddit logo" />
-      <img src={Google} alt="Google logo" />
-      <img src={Slack} alt="Slack logo" />
-    </div>
+    <section id="about" className={styles.featureSection}>
+      <div className={styles.feature}>
+        <div className={styles.leftSection}>
+          <div className={styles.heading}>
+            <h2 className={styles.title}>Visually Appealing Charts</h2>
+            <p className={styles.description}>
+              See graphical representation of projects hosted in GitHub right
+              from your browser.
+            </p>
+          </div>
+          <ul className={styles.tabList}>
+            {tabs.map((tab) => (
+              <li
+                key={tab.id}
+                className={`${styles.tabItem} ${
+                  activeTab === tab.id ? styles.active : ""
+                }`}
+                onClick={() => setActiveTab(tab.id)}
+                role="button"
+                tabIndex={0}
+              >
+                <tab.icon className={styles.tabIcon} />
+                <div className={styles.tabContent}>
+                  <h3 className={styles.tabTitle}>
+                    {tab.title}. {""}
+                    <span className={styles.tabDescription}>
+                      {tab.description}
+                    </span>
+                  </h3>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className={styles.rightSection}>
+          <img
+            src={activeImage}
+            alt={`Visualization for ${activeTab}`}
+            width={500}
+            height={300}
+          />
+        </div>
+      </div>
+    </section>
   );
 };
 

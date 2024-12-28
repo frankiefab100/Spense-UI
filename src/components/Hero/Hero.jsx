@@ -1,65 +1,64 @@
 import React from "react";
-import HeroImgMobile from "/images/Hero-Image-Mobile.png";
-import HeroImgTablet from "/images/Hero-Image-Tablet.png";
-import HeroImgDesktop from "/images/Hero-Image-Desktop.png";
-import Checkmark from "/icons/Checkmark.svg";
-import "./Hero.css";
+import ChromeLogo from "/icons/chrome-logo.svg";
+import { Check } from "lucide-react";
+import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero-top">
-        <picture>
-          <source
-            media="(max-width: 469px)"
-            srcSet={HeroImgMobile}
-            alt="woman recording expenses in her desk"
-          />
-          <source
-            media="(min-width: 470px)"
-            srcSet={HeroImgTablet}
-            alt="woman recording expenses in her desk"
-          />
-          <source
-            media="(min-width: 980px)"
-            srcSet={HeroImgDesktop}
-            alt="woman recording expenses in her desk"
-          />
-          <img src={HeroImgMobile} alt="woman recording expenses in her desk" />
-        </picture>
+    <section className={styles.hero}>
+      <div className={styles.content}>
+        <span className={styles.badge}>
+          <span>New</span>
+          Announcing our latest version 🎉
+        </span>
+        <h1 className={styles.title}>A Better Way to View GitHub Data</h1>
+        <p className={styles.description}>
+          GitSnap is an open-source developer tool used to track contributors,
+          pull requests, issues, and branches of any project on GitHub.
+        </p>
+
+        <a
+          href="https://chromewebstore.google.com/detail/gitsnap/gkeemliblioicebplmgekbmpdleogmpg"
+          role="button"
+          className={styles.button}
+        >
+          <img src={ChromeLogo} alt="chrome logo" width="25px" height="auto" />
+          <span>Download for Chrome</span>
+        </a>
+
+        <div className={styles.attributes}>
+          <div>
+            <Check className={styles.checkmark} />
+            <span>No sign up</span>
+          </div>
+          <div>
+            <Check className={styles.checkmark} />
+            <span>Open source</span>
+          </div>
+        </div>
       </div>
 
-      <div className="hero-bottom">
-        <h1 className="title">Share your unfiltered thoughts. Get paid.</h1>
-        <p className="subtitle">
-          Spense is an open platform for individuals to share their unfiltered
-          thoughts. Discuss the topics you love, and get paid for doing{" "}
-          <em>just</em> that.
-        </p>
-        <div className="selling-points">
-          <span>
-            <img src={Checkmark} alt="checkmark" />
-            Receive 99% off the earnings.
-          </span>
-          <span>
-            <img src={Checkmark} alt="checkmark" />
-            Get paid via Debit Card, ACH, or Paypal.
-          </span>
-          <span>
-            <img src={Checkmark} alt="checkmark" />
-            Withdraw your earnings anytime.
-          </span>
-        </div>
-
-        <div className="input-field">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="john@example.com"
+      <div className={styles.imageContainer}>
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcSet="/images/Hero-Image-Desktop.png"
+            width="500px"
+            height="auto"
           />
-          <button>Get Started</button>
-        </div>
+          <source
+            media="(min-width: 768px)"
+            srcSet="/images/Hero-Image-Tablet.png"
+            width="400px"
+            height="auto"
+          />
+          <img
+            src="/images/Hero-Image-Tablet.png"
+            width="400px"
+            height="auto"
+            alt="GitSnap user interface"
+          />
+        </picture>
       </div>
     </section>
   );

@@ -1,26 +1,27 @@
 import React from "react";
-import TextEditor from "/images/Text-Editor.png";
-import "./Demo.css";
+import styles from "./Demo.module.css";
 
 const Demo = () => {
   return (
-    <div className="demo">
-      <div className="demo-top">
-        <h2>A text editor like no other.</h2>
+    <section id="features" className={styles.demo}>
+      <div className={styles.demoLeft}>
+        <iframe
+          src="https://www.youtube.com/embed/2NnhyWik_z4"
+          title="GitSnap video"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      <div className={styles.demoRight}>
+        <h2 className={styles.title}>GitHub Repository Insights</h2>
         <p>
-          Our text editor pulls you into focus mode with it's simplistic design
-          and usability, so you can put out your best writing.
+          With the GitSnap extension, you can easily access key metrics of any
+          repository by simply hovering over it.
         </p>
-
-        <a id="learn-more" href="learn-more">
-          Text Editor Live Demo ➡
-        </a>
       </div>
-
-      <div className="demo-bottom">
-        <img src={TextEditor} alt="text editor" />
-      </div>
-    </div>
+    </section>
   );
 };
 

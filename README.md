@@ -1,7 +1,7 @@
-<div align="center">
- <h1>GitSnap - Landing Page</h1>
- <p>A minimalistic website for the GitSnap chrome extension</p>
- <div>
+<div>
+ <h1 align="center">GitSnap Website</h1>
+ <p align="center">A minimalistic landing page for the GitSnap Chrome extension</p>
+<div>
 
 
 ## Technologies
@@ -11,31 +11,31 @@
 - Netlify (Hosting)
 
 ## Installation
-Clone the repository
+**1.** Clone the repository
 
 ```BASH
 git clone https://github.com/frankiefab100/gitsnap-web.git
 ```
 
-Change to the gitsnap-web directory
+**2.**  Change to the gitsnap-web directory
 
 ```BASH
 cd gitsnap-web
 ```
 
-Install dependencies
+**3.** Install dependencies
 
 ```BASH
 npm install
 ```
 
-Run the development server
+**4.** Run the development server
 
 ```BASH
 npm run dev
 ```
 
-Navigate to `http://localhost:5173` in your browser to view the web app.
+**5.** Navigate to `http://localhost:5173` in your browser to view the web app.
 
 ## License 
 

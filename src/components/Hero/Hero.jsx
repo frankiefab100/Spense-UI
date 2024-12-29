@@ -11,10 +11,13 @@ const Hero = () => {
           <span>New</span>
           Announcing our latest version 🎉
         </span>
-        <h1 className={styles.title}>A Better Way to View GitHub Data</h1>
+        <h1 className={styles.title}>
+          A Smarter Way to Explore GitHub Repositories
+        </h1>
         <p className={styles.description}>
-          GitSnap is an open-source developer tool used to track contributors,
-          pull requests, issues, and branches of any project on GitHub.
+          GitSnap is an open-source tool designed for developers to efficiently
+          track contributors, pull requests, issues, and branches across any
+          GitHub project.
         </p>
 
         <a

@@ -39,7 +39,7 @@ npm run dev
 
 ## License 
 
-This project is protected under the [MIT License](./License).
+This project is protected under the [MIT License](https://github.com/frankiefab100/gitsnap-web/blob/main/LICENSE).
 
 
 <hr>

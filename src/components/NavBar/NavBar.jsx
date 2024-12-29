@@ -55,6 +55,8 @@ const NavBar = () => {
           <a
             className={styles.githubIcon}
             href="https://github.com/frankiefab100/gitsnap"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Github />
           </a>

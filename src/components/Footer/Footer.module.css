@@ -17,3 +17,9 @@
     padding: 0px;
   }
 }
+
+@media (max-width: 468px) {
+  .footerNav {
+    font-size: 0.85rem;
+  }
+}

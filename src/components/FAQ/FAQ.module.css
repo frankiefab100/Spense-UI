@@ -50,3 +50,9 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 468px) {
+  .question p {
+    font-size: 0.85rem;
+  }
+}

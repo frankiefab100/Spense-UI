@@ -7,10 +7,6 @@
   padding: 80px 120px;
 }
 
-/* .title {
-  color: #8b1d24;
-} */
-
 .demoLeft {
   display: flex;
   flex: 2;
@@ -55,5 +51,12 @@
   }
   .title {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 468px) {
+  .demoRight > p {
+    font-size: 0.85rem;
+    line-height: 20px;
   }
 }

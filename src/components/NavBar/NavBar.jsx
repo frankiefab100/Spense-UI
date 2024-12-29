@@ -53,7 +53,7 @@ const NavBar = () => {
 
         <div className={styles.menuRight}>
           <a
-            // className={styles.githubStars}
+            className={styles.githubIcon}
             href="https://github.com/frankiefab100/gitsnap"
           >
             <Github />

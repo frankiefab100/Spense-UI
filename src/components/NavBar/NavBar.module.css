@@ -9,10 +9,10 @@
   transition: background-color 0.3s ease;
 }
 
-.sticky {
-  /* background-color: rgba(255, 255, 255, 0.9); */
+/* .sticky {
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .nav {
   border: 1px solid var(--text-primary);
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.6rem 2rem;
+  padding: 1rem 2rem;
   max-width: 1000px;
   margin: 1rem auto;
   background-color: white;
@@ -47,13 +47,15 @@
   padding: 0;
 }
 
-.menuItem {
-  /* text-decoration: none; */
+.menuItem,
+.githubIcon {
   color: #666;
 }
 
 .menuItem:hover,
-.menuItem:active {
+.menuItem:active,
+.githubIcon:hover,
+.githubIcon:active {
   color: #d54d6f;
 }
 
@@ -61,7 +63,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .mobileMenu {
@@ -74,7 +76,6 @@
 
 .mobileMenuItem {
   padding: 1rem 0;
-  /* text-decoration: none; */
   color: #666;
 }
 

@@ -7,10 +7,11 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.content}>
-        <span className={styles.badge}>
+        <a href="https://x.com/frankiefab100/status/1871241057981354426" 
+          className={styles.badge}>
           <span>New</span>
           Announcing our latest version 🎉
-        </span>
+        </a>
         <h1 className={styles.title}>
           A Smarter Way to Explore GitHub Repositories
         </h1>

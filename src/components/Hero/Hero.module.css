@@ -4,7 +4,8 @@
   align-items: center;
   gap: 3rem;
   margin: 0 auto;
-  padding: 160px 120px;
+    /* padding: 160px 120px; */
+  padding: 260px 120px 180px;
 }
 
 .content {
@@ -19,6 +20,7 @@
   align-items: center;
   background: var(--color-secondary);
   color: #111;
+  cursor: pointer;
   padding: 0.2rem;
   border-radius: 20px;
   font-size: 0.875rem;

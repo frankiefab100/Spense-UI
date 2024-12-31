@@ -14,6 +14,8 @@ const CTA = () => {
           href="https://chromewebstore.google.com/detail/gitsnap/gkeemliblioicebplmgekbmpdleogmpg"
           className={styles.button}
           role="button"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Get GitSnap <span className={styles.btnText}>it's free</span>
         </a>

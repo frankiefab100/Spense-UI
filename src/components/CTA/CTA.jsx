@@ -17,7 +17,7 @@ const CTA = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Get GitSnap <span className={styles.btnText}>it's free</span>
+          Get GitSnap <span className={styles.btnText}>—— it's free</span>
         </a>
       </div>
     </section>

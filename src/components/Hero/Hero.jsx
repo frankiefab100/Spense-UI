@@ -8,9 +8,11 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.content}>
         <a href="https://x.com/frankiefab100/status/1871241057981354426" 
+          target="_blank"
+          rel="noopener noreferrer"
           className={styles.badge}>
           <span>New</span>
-          Announcing our latest version 🎉
+          Announcing the latest version 🎉
         </a>
         <h1 className={styles.title}>
           A Smarter Way to Explore GitHub Repositories

@@ -87,9 +87,16 @@
   .menu {
     display: none;
   }
+  
+  .hamburgerIcon {
+    cursor: pointer;
+  }
 
   .mobileMenu {
     display: flex;
+    margin: 10px;
+    border-radius: 10px;
+    border: 0.5px solid #cdcdcd;
   }
 
   .nav {
